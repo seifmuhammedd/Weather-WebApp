@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-navy text-light">
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg p-5 bg-navy">
+        <div class="container d-flex align-items-center">
+            <div class="main w-20 d-flex align-items-center">
+                <img src="images/logo@2x.png" class="w-30 me-2" alt="logo">
+                <div class="main-text text-start pt-2">
+                    <a class="navbar-brand text-light h1" href="#">Weather</a>
+                    <p class="ms-1">tagline goes here </p>
+                </div>
+            </div>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center pb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Find Location -->
+
+    <section class="search">
+        <div class="container pt-5 text-center">
+            <div class="search-content">
+                <input type="search" name="" id="searchInput" placeholder="Find your location..."
+                    class=" w-100 rounded-5 border-0 p-3 bg-navy text-white">
+                <button class="btn btn-primary rounded-5" id="searchBtn">Find</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Section -->
+
+    <section class="weather-table overflow-visible">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <div class="inner pb-3 rounded-start-2">
+                        <div class="top-content d-flex justify-content-between px-3 py-2 align-items-center">
+                            <h6 class="day" id="currentDay">Thursday</h6>
+                            <h6 class="date" id="currentDate">10Otober</h6>
+                        </div>
+                        <div class=" row weather-info px-3 pt-5">
+                            <h4 class="col-md-12 City">Cairo</h4>
+                            <div class="col-md-12 degree ps-3">29.3°C</div>
+                            <img class="w-25" alt="" id="weatherImg">
+                            <p id="weatherStatus">Clear</p>
+                        </div>
+                        <div class="weather-bottom-content">
+                            <span class="special"><i class="fa-solid fa-umbrella"></i> <span id="rain">20%</span></span>
+                            <span class="special"><i class="fa-solid fa-wind"></i> <span id="wind">18km/h</span></span>
+                            <span class="special"><i class="fa-solid fa-compass"></i> <span id="direction">East</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 inner-middile pb-3">
+                        <div class="top-content text-center px-1 py-2">
+                            <h6 class="day" id="nextDay">Friday</h6>
+                        </div>
+                        <div class="row weather-info px-3 py-5 justify-content-center align-items-center text-center">
+                            <img  class="mx-auto w-25 mb-3 next-img" alt="">
+                            <div class="col-md-12 high-degree ps-3" id="highDegree">29.3°C</div>
+                            <div class="col-md-12 small-degree ps-3" id="smallDegree">29.3°C</div>
+                            <p class="pt-5" id="newStatus">Clear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 inner pb-3 rounded-end-2">
+                        <div class="top-content text-center px-1 py-2">
+                            <h6 class="day" id="nextDay">Friday</h6>
+                        </div>
+                        <div class="row weather-info px-3 py-5 justify-content-center align-items-center text-center">
+                            <img  class="mx-auto w-25 mb-3 next-img" alt="">
+                            <div class="col-md-12 high-degree ps-3" id="highDegree">29.3°C</div>
+                            <div class="col-md-12 small-degree ps-3" id="smallDegree">29.3°C</div>
+                            <p class="pt-5" id="newStatus">Clear</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container py-5 text-center">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-sm-4">
+                    <div class="search-content">
+                        <input type="search" name="" id="emailInput" placeholder="Enter your email to subscribe..."
+                            class=" w-100 rounded-5 border-0 p-3 bg-navy text-white">
+                        <button class="btn btn-primary rounded-5">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-5 links d-flex justify-content-center align-items-center">
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-google-plus-g"></i></span>
+                    <span><i class="fa-brands fa-pinterest"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
