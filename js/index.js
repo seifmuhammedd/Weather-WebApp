@@ -20,7 +20,7 @@ const nextDayStatus = document.querySelectorAll("#newStatus");
 
 async function weatherForecast(city) {
   var response = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=5b65996e148e4f39b49204321241010&q=${city}&days=3`,
+    `https://api.weatherapi.com/v1/forecast.json?key=a7d18a3f8e2342f9a14143726240112&q=${city}&days=3`,
     {
       method: "GET",
     }
